@@ -1,6 +1,7 @@
 "use client";
 import { Figtree } from "@next/font/google";
 import { SessionProvider } from "next-auth/react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./globals.css";
 

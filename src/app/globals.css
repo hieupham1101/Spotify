@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    background-color: #000000;
+}
+.div-logo{
+    background-color: #121212;
+    border-radius: 8px;
+    cursor: default;
+}
+.div-header-content{
+	background-color: #121212;
+    /* border-radius: 8px; */
+    cursor: default;
+}
+.bg-body-navbar{
+	background-color: #121212;
+}
+.navbar-text{
+	color: #9b9292;
+}
+.div-header-navbar{
+	background-color: #121212;
+    border-radius: 8px;
+    cursor: default;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, 1) 0%,
+											  rgba(0, 0, 0, 1) 25%,
+											  transparent 100%,
+											  rgba(0, 0, 0, 1) 75%,
+											  transparent)
+}
+.custom-button {
+	border-radius: 50px;
+	background-color: #0a0a0a;
+	padding: 10px; /* Điều chỉnh đệm theo nhu cầu của bạn */
+	margin: 5px;  /* Điều chỉnh margin theo nhu cầu của bạn */
+}
+@media (max-width: 768px) {
+    .custom-button {
+        padding: 5px;
+        margin: 2px;
+    }
+	* {
+        font-size: 10px;
+    }
+	.div-adust{
+		flex: 0.8;
+	}
+}
+.card-item {
+	border: 5px solid #403e3e;
+}
+.div-content{
+	background-color: #1e1e1e;
+    /* border-radius: 8px; */
+    cursor: default;
+	color: #9b9292;
+}
+/* Ẩn sidebar trên màn hình điện thoại */
+@media (max-width: 600px) {
+	.hide-sidebar {
+	  display: none;
+	}
+  }
+  
+  /* Hiển thị nội dung chính rộng hơn trên màn hình điện thoại */
+  @media (max-width: 600px) {
+	.full-width-content {
+	  padding-left: 0;
+	}
+  }
+  
